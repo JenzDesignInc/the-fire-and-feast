@@ -1,0 +1,30 @@
+
+ 
+.wrapper,
+.wrapper--absolute {
+    width: 100%;
+    padding-right: 1rem;
+    position: relative;
+    @include borderBox();
+}
+
+
+ 
+.wrapper--absolute {
+    position: relative;
+    top: -14%;
+
+}
+
+
+
+//----------------------------------------------------
+// Media Queries
+//----------------------------------------------------
+@media (min-width: $breakpoint-large) {
+    .wrapper {
+        max-width: $site-width;
+        margin: 0 auto;
+        padding: 0;
+    }    
+}
