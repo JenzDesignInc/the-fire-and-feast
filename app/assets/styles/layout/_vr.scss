@@ -26,3 +26,10 @@
 .vr--x25 {
     @include vr(25);
 }
+
+
+@media only screen and (max-width: $breakpoint-medium) {
+    .vr--x25 {
+        @include vr(19);
+    }
+}

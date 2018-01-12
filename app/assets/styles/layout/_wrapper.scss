@@ -3,7 +3,7 @@
 .wrapper,
 .wrapper--absolute {
     width: 100%;
-    padding-right: 1rem;
+  //  padding-right: 1rem;
     position: relative;
     @include borderBox();
 }
@@ -26,5 +26,12 @@
         max-width: $site-width;
         margin: 0 auto;
         padding: 0;
+    }    
+}
+
+@media (max-width: $breakpoint-medium) {
+    .wrapper {
+
+   
     }    
 }

@@ -51,6 +51,504 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers (opinionated).
+   */
+body {
+  margin: 0; }
+
+/**
+   * Add the correct display in IE 9-.
+   */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * Add the correct display in IE 9-.
+   * 1. Add the correct display in IE.
+   */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block; }
+
+/**
+   * Add the correct margin in IE 8.
+   */
+figure {
+  margin: 1em 40px; }
+
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * 1. Remove the gray background on active links in IE 10.
+   * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+   */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+   * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+   * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+   */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+   * Add the correct font style in Android 4.3-.
+   */
+dfn {
+  font-style: italic; }
+
+/**
+   * Add the correct background and color in IE 9-.
+   */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+   * Add the correct font size in all browsers.
+   */
+small {
+  font-size: 80%; }
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Add the correct display in IE 9-.
+   */
+audio,
+video {
+  display: inline-block; }
+
+/**
+   * Add the correct display in iOS 4-7.
+   */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+   * Remove the border on images inside links in IE 10-.
+   */
+img {
+  border-style: none; }
+
+/**
+   * Hide the overflow in IE.
+   */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers (opinionated).
+   * 2. Remove the margin in Firefox and Safari.
+   */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+   * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+   *    controls in Android 4.
+   * 2. Correct the inability to style clickable types in iOS and Safari.
+   */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+   * Correct the padding in Firefox.
+   */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+   * 1. Add the correct display in IE 9-.
+   * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+   * Remove the default vertical scrollbar in IE.
+   */
+textarea {
+  overflow: auto; }
+
+/**
+   * 1. Add the correct box sizing in IE 10-.
+   * 2. Remove the padding in IE 10-.
+   */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+   * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+   */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in IE 9-.
+   * 1. Add the correct display in Edge, IE, and Firefox.
+   */
+details,
+menu {
+  display: block; }
+
+/*
+   * Add the correct display in all browsers.
+   */
+summary {
+  display: list-item; }
+
+/* Scripting
+     ========================================================================== */
+/**
+   * Add the correct display in IE 9-.
+   */
+canvas {
+  display: inline-block; }
+
+/**
+   * Add the correct display in IE.
+   */
+template {
+  display: none; }
+
+/* Hidden
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10-.
+   */
+[hidden] {
+  display: none; }
+
+ol, ul {
+  list-style: none; }
+
+.noScroll {
+  overflow: hidden; }
+
+.isHidden {
+  display: none; }
+
+.isVisible,
+.isVisible--block {
+  display: block; }
+
+.isVisible--inline {
+  display: inline; }
+
+.isVisible--inlineBlock {
+  display: inline-block; }
+
+.isVisible--tableCell {
+  display: table-cell; }
+
+.isVisuallyHidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+[disabled],
+.disabled,
+[disabled]:hover,
+.disabled:hover {
+  text-decoration: none;
+  cursor: default;
+  opacity: 0.5; }
+
+@media (min-width: 48em) {
+  .isHidden--medium {
+    display: none; }
+  .isVisible--medium,
+  .isVisible--block--medium {
+    display: block; }
+  .isVisible--inline--medium {
+    display: inline; }
+  .isVisible--inline-block--medium {
+    display: inline-block; }
+  .isVisible--tableCell--medium {
+    display: table-cell; }
+  .isVisuallyHidden--medium {
+    visibility: hidden; }
+  .isVisuallyVisible--medium {
+    visibility: visible; } }
+
+@media (min-width: 64rem) {
+  .isHidden--large {
+    display: none; }
+  .isVisible--large,
+  .isVisible--block--large {
+    display: block; }
+  .isVisible--inline--large {
+    display: inline; }
+  .isVisible--inline-block--large {
+    display: inline-block; }
+  .isVisible--tableCell--large {
+    display: table-cell; }
+  .isVisuallyHidden--large {
+    visibility: hidden; }
+  .isVisuallyVisible--large {
+    visibility: visible; }
+  .isDesktopHidden {
+    display: none;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute; }
+  .isVisuallyHiddenDesktop {
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute; } }
+
+@media (min-width: 90em) {
+  .isHidden--xlarge {
+    display: none; }
+  .isVisible--xlarge,
+  .isVisible--block--xlarge {
+    display: block; }
+  .isVisible--inline--xlarge {
+    display: inline; }
+  .isVisible--inline-block--xlarge {
+    display: inline-block; }
+  .isVisible--tableCell--xlarge {
+    display: table-cell; }
+  .isVisuallyHidden--xlarge {
+    visibility: hidden; }
+  .isVisuallyVisible--xlarge {
+    visibility: visible; } }
+
 .padding--x1 {
   padding: 1rem; }
 
@@ -76,7 +574,7 @@ table {
   text-align: left; }
 
 .txt--align-right {
-  text-align: center; }
+  text-align: right; }
 
 .txt--align-center {
   text-align: center; }
@@ -345,7 +843,7 @@ a:visited.nav__link {
 
 .menu__hd {
   padding: 1rem;
-  background-color: #004a88;
+  background-color: #6b342c;
   color: #ffffff; }
 
 .hide {
@@ -356,7 +854,7 @@ a:visited.nav__link {
 
 .contextual-nav a,
 .contextual-nav a:visited {
-  color: #1666af;
+  color: #6b342c;
   display: block;
   text-transform: capitalize;
   text-decoration: none;
@@ -367,7 +865,7 @@ a:visited.nav__link {
 
 .contextual-nav a.isActive,
 .contextual-nav a:hover {
-  background-color: #003764;
+  background-color: #666666;
   color: #ffffff;
   text-decoration: none; }
 
@@ -408,6 +906,306 @@ a:visited.nav__link {
   .mainHeader {
     position: fixed; } }
 
+.input {
+  width: 100%;
+  height: 2.75rem;
+  display: block;
+  margin: 0;
+  padding: 0 0.75rem;
+  border: 1px solid #999999;
+  color: #666666;
+  font-size: 1rem;
+  cursor: auto;
+  -webkit-appearance: none; }
+
+.input::-ms-clear {
+  display: none; }
+
+.input:focus {
+  outline: 0; }
+
+.input::-webkit-input-placeholder {
+  color: #cccccc; }
+
+.input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #cccccc; }
+
+.input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #cccccc; }
+
+.input:-ms-input-placeholder {
+  /* IE */
+  color: #cccccc; }
+
+.input--textarea {
+  min-height: 6.25rem;
+  padding: 0.75rem;
+  overflow: auto;
+  resize: none; }
+
+.input--currency {
+  width: 9.5rem;
+  position: relative; }
+
+.input--currency > * {
+  margin-left: 1.563rem; }
+
+.input--currency:before {
+  content: '$';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  font-weight: 700;
+  line-height: 2.5;
+  text-align: center; }
+
+.input--number::-webkit-outer-spin-button,
+.input--number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+.input--number {
+  -moz-appearance: textfield; }
+
+.input--lg {
+  width: 100%; }
+
+.input--med {
+  width: 48%; }
+
+.input--sm {
+  width: 30%; }
+
+.input--ssn {
+  width: 7.563rem; }
+
+.input--micro {
+  width: 6.25rem; }
+
+.input--hasError,
+.has-error .input {
+  border: 2px solid #cf102d; }
+
+.input--hasError:focus,
+.has-error .input:focus {
+  border-color: #cf102d; }
+
+.input--hasSuccess,
+.has-hasSuccess .input {
+  border: 2px solid #72b325; }
+
+.input--hasSuccess:focus,
+.has-hasSuccess .input:focus {
+  border-color: #72b325; }
+
+.input[disabled],
+.input[disabled]:hover {
+  background: #f5f5f5;
+  color: #cccccc;
+  opacity: 1; }
+
+.input {
+  -webkit-border-radius: 4 4 4 4;
+  -moz-border-radius: 4 4 4 4;
+  -ms-border-radius: 4 4 4 4;
+  border-radius: 4 4 4 4; }
+
+.input:focus {
+  -webkit-box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+  -moz-box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6); }
+
+.input--currency > * {
+  margin-left: 1.563rem; }
+
+.input--hasError:focus,
+.has-error .input:focus {
+  -webkit-box-shadow: 0 0 8px rgba(207, 16, 45, 0.6);
+  -moz-box-shadow: 0 0 8px rgba(207, 16, 45, 0.6);
+  box-shadow: 0 0 8px rgba(207, 16, 45, 0.6); }
+
+.input--hasSuccess:focus,
+.has-hasSuccess .input:focus {
+  -webkit-box-shadow: 0 0 8px rgba(114, 179, 37, 0.6);
+  -moz-box-shadow: 0 0 8px rgba(114, 179, 37, 0.6);
+  box-shadow: 0 0 8px rgba(114, 179, 37, 0.6); }
+
+.label {
+  display: block;
+  position: relative;
+  color: #333333;
+  font-weight: 700;
+  font-size: 0.875rem;
+  margin-bottom: 0.25rem; }
+
+.label--option {
+  display: inline;
+  padding: 0.2rem 0.3rem 0.2rem 1.8rem;
+  line-height: 2;
+  color: #333333;
+  cursor: pointer;
+  position: relative;
+  z-index: 100; }
+
+.label--inline {
+  display: inline-block; }
+
+.label--normal {
+  font-weight: normal; }
+
+.btn,
+.btn:visited {
+  border: 1px solid transparent;
+  background-color: #cccccc;
+  color: #000000;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  font-family: Arial, Sans-Serif;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  width: 100%;
+  margin: 0;
+  min-height: 2.75rem;
+  padding: 0.5625rem 2rem;
+  white-space: normal;
+  text-align: center;
+  text-decoration: none; }
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  background-color: #333333;
+  color: #ffffff;
+  text-decoration: none; }
+
+.btn--isActive,
+.btn:active {
+  color: #ffffff; }
+
+.btn--dismiss,
+.btn--dismiss:visited {
+  background-color: #ededed;
+  color: #333333; }
+
+.btn--dismiss:hover,
+.btn--dismiss:active,
+.btn--dismiss:focus {
+  background-color: #999999;
+  color: #000000;
+  text-decoration: none;
+  text-shadow: none; }
+
+.btn--white,
+.btn--white:visited {
+  background-color: #ffffff;
+  text-shadow: none;
+  border: 1px solid #cccccc; }
+
+.btn--white:hover,
+.btn--white:active,
+.btn--white:focus {
+  background-color: #ededed;
+  text-decoration: none;
+  color: #000000; }
+
+.btn--link,
+.btn--link:visited {
+  display: inline;
+  padding: 0;
+  width: auto;
+  min-height: initial;
+  font-family: inherit;
+  line-height: inherit;
+  box-shadow: none; }
+
+.btn--link:hover,
+.btn--link:active,
+.btn--link:focus {
+  background: none;
+  color: #000000;
+  text-decoration: underline; }
+
+.btn--block {
+  width: 100%; }
+
+.btn > .icon {
+  display: inline-block;
+  height: 0.875rem;
+  margin-right: 0.5rem;
+  width: 0.875rem;
+  display: inline-block; }
+
+.btn[disabled],
+.btn[disabled]:hover,
+.btn[disabled]:active,
+.btn--isDisabled,
+.btn--isDisabled:hover,
+.btn--isDisabled:active {
+  background-color: #cccccc;
+  color: #333333;
+  -webkit-text-shadow: none;
+  text-shadow: none;
+  opacity: 0.5;
+  cursor: default;
+  box-shadow: none; }
+
+@media (min-width: 48em) {
+  .btn {
+    display: inline-block;
+    width: auto; }
+  .btn--block {
+    display: block;
+    width: 100%; } }
+
+@media (min-width: 64rem) {
+  .btn {
+    font-size: 1rem; }
+  .btn > .icon {
+    height: 1rem;
+    width: 1rem; } }
+
+.btn,
+.btn:visited {
+  background-color: #f15a24;
+  color: #ffffff;
+  -webkit-border-radius: 4 4 4 4;
+  -moz-border-radius: 4 4 4 4;
+  -ms-border-radius: 4 4 4 4;
+  border-radius: 4 4 4 4;
+  -webkit-text-shadow: 1px 1px 1px #f15a24, 1px 1px 1px #f15a24;
+  text-shadow: 1px 1px 1px #f15a24, 1px 1px 1px #f15a24;
+  -webkit-transition: background-color 0.15s ease;
+  -moz-transition: background-color 0.15s ease;
+  -o-transition: background-color 0.15s ease;
+  -ms-transition: background-color 0.15s ease;
+  transition: background-color 0.15s ease; }
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  background-color: #f15a24; }
+
+.btn--isActive,
+.btn:active {
+  -webkit-box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.25); }
+
 .img {
   display: block; }
 
@@ -426,6 +1224,20 @@ a:visited.nav__link {
   background-repeat: no-repeat;
   height: 64px; }
 
+.icon--feastAndFire--footer {
+  height: 64px;
+  width: 64px;
+  text-align: right;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2022.0.1%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2064%2064%22%20style%3D%22enable-background%3Anew%200%200%2064%2064%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text/css%22%3E%0A%09.st0%7Bfill%3A%236C352E%3B%7D%0A%09.st1%7Bfill%3A%23F1E8D7%3B%7D%0A%09.st2%7Bfill%3A%23F15B27%3B%7D%0A%3C/style%3E%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M62.8%2C30.4c-0.1-1.6-0.2-3.1-0.6-4.6c-0.1-0.7-0.3-1.4-0.5-2c-0.1-0.7-0.3-1.3-0.6-1.9c-0.2-0.7-0.4-1.4-0.8-2%0A%09c-0.1-0.4-0.3-0.8-0.5-1.2c-0.3-0.7-0.6-1.4-1-2c-1.2-2.1-2.6-4.1-4.3-5.8c-0.5-0.7-1.1-1.3-1.8-1.8c-1.3-1.3-2.8-2.4-4.4-3.4%0A%09c-1.4-1-2.9-1.7-4.5-2.4C43%2C3%2C42.3%2C2.7%2C41.4%2C2.5c0%2C0-0.1%2C0-0.1%2C0c-0.2-0.1-0.4-0.2-0.6-0.2c-0.2-0.1-0.4-0.2-0.6-0.2%0A%09c-0.4-0.2-0.9-0.3-1.3-0.3c-0.1%2C0-0.3-0.1-0.4-0.1c-6.5-1.4-12.9-0.7-19%2C2c-2.9%2C1.3-5.6%2C3-7.9%2C5.2c-0.7%2C0.6-1.3%2C1.2-1.9%2C1.9%0A%09c-0.1%2C0.1-0.3%2C0.3-0.4%2C0.4C2%2C19.2-0.4%2C28.6%2C1.7%2C39.2c0.6%2C2.7%2C1.5%2C5.3%2C2.9%2C7.8c0.1%2C0.3%2C0.3%2C0.7%2C0.5%2C0.9c0.4%2C0.9%2C0.9%2C1.7%2C1.5%2C2.4%0A%09c0.3%2C0.5%2C0.6%2C0.9%2C0.9%2C1.3C8%2C52.3%2C8.5%2C52.8%2C9%2C53.3c0.1%2C0.2%2C0.3%2C0.3%2C0.4%2C0.5c2.6%2C2.8%2C5.7%2C5.1%2C9.2%2C6.8c1.6%2C0.8%2C3.3%2C1.5%2C5.1%2C1.9%0A%09c1.6%2C0.5%2C3.3%2C0.8%2C5%2C1c0.2%2C0.1%2C0.4%2C0.1%2C0.6%2C0.1c0%2C0%2C0.1%2C0%2C0.1%2C0v0c1.7%2C0.2%2C3.5%2C0.2%2C5.2%2C0c1.8-0.1%2C3.6-0.4%2C5.3-1%0A%09c1.4-0.3%2C2.7-0.8%2C4-1.4l0%2C0c0.2-0.1%2C0.3-0.1%2C0.5-0.2c4.3-1.9%2C8-4.7%2C11.1-8.4c0.7-0.9%2C1.4-1.7%2C2-2.7c0.6-0.8%2C1.1-1.6%2C1.5-2.5%0A%09c0.9-1.5%2C1.6-3.1%2C2.1-4.7c0.1-0.7%2C0.5-1.2%2C0.6-1.9c0.3-1%2C0.6-2%2C0.7-3.1c0%2C0%2C0-0.1%2C0-0.1C62.9%2C35.2%2C62.9%2C32.8%2C62.8%2C30.4z%20M29.2%2C62.2%0A%09C29.2%2C62.2%2C29.2%2C62.2%2C29.2%2C62.2C29.3%2C62.2%2C29.3%2C62.2%2C29.2%2C62.2C29.3%2C62.2%2C29.3%2C62.2%2C29.2%2C62.2z%20M61.8%2C38.5%0A%09C61.8%2C38.5%2C61.8%2C38.5%2C61.8%2C38.5C61.8%2C38.5%2C61.8%2C38.5%2C61.8%2C38.5C61.8%2C38.5%2C61.8%2C38.5%2C61.8%2C38.5C61.8%2C38.5%2C61.8%2C38.5%2C61.8%2C38.5z%22/%3E%0A%3Cg%3E%0A%09%3Cpath%20class%3D%22st1%22%20d%3D%22M43.2%2C42.7c-0.4%2C0-0.9%2C0.1-1.3%2C0c-0.1-0.2-0.3-0.2-0.5-0.2c-0.2%2C0-0.4%2C0-0.6-0.1c-0.3-0.1-0.6-0.1-0.9-0.3%0A%09%09c-1.2-0.3-2.1-1.1-2.8-2c-0.6-0.7-0.9-1.6-1.5-2.4c-1.1-2.3-3-3.8-5.2-5c-1.8-1-3.9-1.4-5.9-1.9c-2.2-0.5-4.4-1-6.4-2.1%0A%09%09c-1.4-0.7-2.6-1.7-3.4-3c-1.1-1.9-1-3.8-0.4-5.8c0.4-1.2%2C0.9-2.3%2C1.4-3.4c-0.1%2C0-0.1%2C0-0.2%2C0c-2.6%2C0.8-4.9%2C2.1-6.6%2C4.2%0A%09%09c-2.8%2C3.4-3.1%2C8.2%2C1.4%2C11.3c1.6%2C1.2%2C3.4%2C2%2C5.3%2C2.6c2.5%2C0.8%2C5%2C1.4%2C7.5%2C2.4c2%2C0.8%2C3.9%2C1.7%2C5.3%2C3.3c0%2C0.2%2C0.1%2C0.3%2C0.2%2C0.4%0A%09%09c0.7%2C0.8%2C1.2%2C1.7%2C1.7%2C2.6c0.3%2C0.5%2C0.4%2C1%2C0.7%2C1.5c1.6%2C3.5%2C3.2%2C7%2C5%2C10.4c0.2%2C0.3%2C0.3%2C0.6%2C0.6%2C0.8c0.2%2C0.1%2C0.4%2C0.2%2C0.6%2C0.1%0A%09%09c0.4-0.4%2C0.6-0.9%2C0.8-1.3c1.4-2.8%2C2.8-5.7%2C4.2-8.5c0.2-0.5%2C0.4-1%2C0.7-1.4c0.2-0.6%2C0.5-1.2%2C0.7-1.8C43.8%2C42.8%2C43.6%2C42.7%2C43.2%2C42.7z%22%0A%09%09/%3E%0A%09%3Cpath%20class%3D%22st1%22%20d%3D%22M33.3%2C55.7c0-0.3-0.2-0.5-0.3-0.8c-1.8-3.5-3.5-7.1-5.3-10.6c-0.2-0.4-0.4-0.8-0.6-1.2%0A%09%09c-0.3-0.5-0.5-1.2-0.9-1.6c-0.3-0.2-0.6-0.2-0.9%2C0c-0.4%2C0.2-0.7%2C0.3-1.1%2C0.5c-1.5%2C0.5-2.9%2C0.6-4.5%2C0.4c-0.4-0.1-0.8-0.2-0.9%2C0.4%0A%09%09c0%2C0.3%2C0.2%2C0.5%2C0.4%2C0.7c1.4%2C2.3%2C2.7%2C4.8%2C3.9%2C7.3c1%2C2%2C2%2C4.1%2C2.7%2C6.2c0.1%2C0.2%2C0.1%2C0.4%2C0.3%2C0.6l0%2C0c0.3%2C0.8%2C0.6%2C1.5%2C0.9%2C2.3%0A%09%09c0.3%2C0.7%2C0.6%2C1.3%2C1.4%2C1.6c2.1%2C0.6%2C4.2%2C0.5%2C6.3-0.2c0.9-0.4%2C0.9-0.7%2C0.5-1.6C34.5%2C58.3%2C33.9%2C57%2C33.3%2C55.7z%22/%3E%0A%09%3Cpath%20class%3D%22st1%22%20d%3D%22M53.7%2C23.4c-0.2-0.5-0.3-0.9-0.5-1.4c-0.3-0.5-0.6-1-0.8-1.4c0-0.1-0.1-0.2-0.2-0.3C52%2C20.3%2C52%2C20.1%2C52%2C20%0A%09%09c-0.6-0.6-1.3-1.2-1.9-1.8C50%2C18.1%2C50%2C18%2C49.9%2C17.9c-0.2-0.1-0.3-0.2-0.5-0.3c-0.2-0.1-0.3-0.2-0.5-0.3c-0.2-0.1-0.4-0.3-0.6-0.3%0A%09%09c-0.5%2C0-0.3%2C0.3-0.2%2C0.5c0.3%2C0.5%2C0.5%2C1.1%2C0.7%2C1.6c0.2%2C0.9%2C0.4%2C1.8%2C0.2%2C2.7c-0.1%2C0.4-0.1%2C0.8-0.2%2C1.2c-0.1%2C0.7-0.6%2C1.3-0.7%2C2.1%0A%09%09c-0.1%2C0.1-0.1%2C0.2-0.2%2C0.4c-1.6%2C2.5-4%2C4.1-6.8%2C5.2c-1.6%2C0.6-3.2%2C1-4.9%2C1.3c-0.9%2C0.2-1.1%2C0.7-0.7%2C1.4c0.7%2C1.1%2C1.3%2C2.2%2C2%2C3.3%0A%09%09c0.4%2C0.7%2C0.6%2C0.7%2C1.4%2C0.5c0.7-0.3%2C1.5-0.5%2C2.3-0.6c1.2-0.2%2C2.5-0.1%2C3.7%2C0c2.1%2C0.2%2C3.5-1.2%2C4.9-2.5c0.1-0.1%2C0-0.1%2C0.1-0.2%0A%09%09c2-2.2%2C3.6-4.6%2C4.1-7.6C53.9%2C25.2%2C53.9%2C24.3%2C53.7%2C23.4z%22/%3E%0A%3C/g%3E%0A%3Cg%3E%0A%09%3Cpath%20class%3D%22st2%22%20d%3D%22M21.4%2C16.5c0.4-0.6%2C0.8-1.1%2C1.3-1.6c1.5-1.9%2C2-4%2C1.2-6.4c0-0.1-0.1-0.2-0.2-0.2c0%2C0%2C0%2C0%2C0%2C0%0A%09%09c0-0.1-0.1-0.1-0.1-0.2h0l0%2C0c0%2C0%2C0%2C0%2C0.1%2C0c-0.1-0.2-0.2-0.3-0.4-0.5c-0.2-0.3-0.5-0.6-1-0.4c-0.5%2C0.2-0.3%2C0.6-0.3%2C0.9l0%2C0%0A%09%09c0%2C0.2%2C0.1%2C0.3%2C0.1%2C0.5l0%2C0c0.3%2C0.9%2C0%2C1.6-0.7%2C2.3c-0.9%2C0.8-1.7%2C1.7-2.4%2C2.7c-1.9%2C2.8-2%2C5.7-0.5%2C8.7c0.1%2C0.3%2C0.3%2C0.5%2C0.7%2C0.4%0A%09%09c0.4-0.1%2C0.3-0.5%2C0.3-0.7c-0.1-0.6-0.1-1.3%2C0-1.9C19.9%2C18.7%2C20.6%2C17.6%2C21.4%2C16.5z%22/%3E%0A%09%3Cpath%20class%3D%22st2%22%20d%3D%22M45.8%2C20.9c0.1-0.4%2C0.2-0.9%2C0.2-1.3c0-0.2%2C0-0.5%2C0-0.7l0%2C0c0.1-0.4%2C0-0.8-0.1-1.2c0%2C0%2C0%2C0%2C0%2C0c0%2C0%2C0%2C0%2C0%2C0%0A%09%09c-0.1-0.3-0.2-0.6-0.2-1h0c0%2C0%2C0-0.1%2C0-0.1c-0.3-0.5-0.4-1-0.7-1.4c-0.1-0.5-0.5-0.8-0.7-1.3c0%2C0-0.1%2C0-0.1%2C0h0l0%2C0%0A%09%09c-0.5-0.9-1.2-1.5-1.9-2.2c-1.3-1.2-2.9-2.2-4-3.7c-0.2-0.1-0.5-0.2-0.8-0.1c-0.2%2C0.2-0.3%2C0.5-0.3%2C0.7c-0.1%2C1.8%2C0.4%2C3.5%2C1.4%2C5%0A%09%09c0.1%2C0.1%2C0.1%2C0.1%2C0.2%2C0.2c0.1%2C0.6%2C0.6%2C1.1%2C0.9%2C1.7c0%2C0.1%2C0.1%2C0.1%2C0.3%2C0.2c0%2C0%2C0%2C0%2C0%2C0c-0.2%2C0.3%2C0.1%2C0.6%2C0.1%2C0.8%0A%09%09c0.1%2C0.3%2C0.2%2C0.6%2C0.5%2C0.7c0%2C0%2C0%2C0%2C0%2C0c0%2C0.2%2C0.1%2C0.4%2C0.1%2C0.6v0c0.1%2C0.4%2C0.2%2C0.8%2C0.3%2C1.1c0%2C0-0.1%2C0-0.1%2C0.1c0%2C0.2%2C0%2C0.3%2C0.1%2C0.4%0A%09%09c0%2C0.1%2C0.1%2C0.2%2C0.1%2C0.4c0.1%2C1%2C0%2C2-0.2%2C3h0c0%2C0%2C0%2C0.1%2C0%2C0.1c-0.1%2C0-0.1%2C0.1-0.1%2C0.2c-0.3%2C1.5-1%2C2.7-2%2C3.8c-0.2%2C0.2-0.3%2C0.5-0.1%2C0.7%0A%09%09c0.2%2C0.2%2C0.5%2C0.2%2C0.7%2C0.1c1.7-1%2C3.4-2%2C4.7-3.6l0%2C0c0%2C0%2C0.1%2C0%2C0.1%2C0c0.3-0.5%2C0.7-0.8%2C0.8-1.3c0%2C0%2C0.1%2C0%2C0.1%2C0%0A%09%09c0.2-0.6%2C0.6-1.1%2C0.7-1.7c0%2C0%2C0%2C0%2C0%2C0l0%2C0C45.8%2C21%2C45.8%2C21%2C45.8%2C20.9z%20M41.6%2C21.9c0%2C0%2C0-0.1%2C0-0.1C41.7%2C21.8%2C41.7%2C21.9%2C41.6%2C21.9%0A%09%09C41.7%2C21.9%2C41.7%2C21.9%2C41.6%2C21.9z%20M45.1%2C22C45.1%2C22%2C45.1%2C22%2C45.1%2C22C45.1%2C21.9%2C45.1%2C21.9%2C45.1%2C22C45.1%2C21.9%2C45.1%2C22%2C45.1%2C22z%22/%3E%0A%09%3Cpath%20class%3D%22st2%22%20d%3D%22M38.3%2C21.3c0-0.7%2C0-1.3%2C0-2c0%2C0%2C0-0.1%2C0-0.1c0.1-0.3%2C0-0.6-0.2-0.8c0%2C0-0.1%2C0-0.1%2C0c0%2C0%2C0%2C0%2C0%2C0%0A%09%09c0.1-0.4%2C0-0.7-0.3-0.8c0.2-0.3-0.1-0.5-0.2-0.7c-0.2-0.3-0.4-0.7-0.7-1c-0.1-0.2-0.2-0.4-0.4-0.5c-0.2-0.6-0.7-1.1-1.1-1.6%0A%09%09c-0.1%2C0-0.1%2C0-0.2%2C0c0.1-0.2%2C0-0.4-0.2-0.6c-0.9-1.4-1.4-2.9-1.7-4.5c-0.1-0.3-0.3-1.7-0.3-1.9c-0.1-0.8%2C0-1.7%2C0.1-2.5%0A%09%09c0-0.2%2C0.2-1.5%2C0.2-1.6c0.1-0.3%2C0.2-0.5-0.1-0.7C33%2C1.9%2C32.8%2C2%2C32.5%2C2.2c-0.5%2C0.5-1.2%2C0.9-1.6%2C1.5c0.1%2C0-0.4%2C0.3-0.5%2C0.5%0A%09%09c-0.9%2C1.1-1.7%2C2.2-2.4%2C3.4c0%2C0%2C0%2C0%2C0.1%2C0c0%2C0%2C0.1%2C0.1%2C0.1%2C0.1c0%2C0%2C0%2C0%2C0%2C0c0%2C0-0.1%2C0-0.1%2C0c-0.1%2C0-0.1%2C0.1-0.2%2C0.1%0A%09%09c-1.1%2C2.4-0.3%2C4.4%2C1.1%2C6.4c0.2%2C0.4%2C0.4%2C0.7%2C0.7%2C1.1h0c0.3%2C0.6%2C0.6%2C1.2%2C0.9%2C1.8c0.3%2C0.7%2C0.1%2C1.4-0.3%2C1.9c-1.1%2C1.4-3.6%2C1.3-4.5-0.2%0A%09%09c-0.4-0.6-0.5-1.3-0.1-2c0.1-0.3%2C0.4-0.5%2C0.1-0.8c-0.3-0.3-0.6-0.1-0.9%2C0.1c-0.6%2C0.4-1.1%2C0.9-1.6%2C1.4c-2.1%2C2.4-2.1%2C6.1%2C0.1%2C8.4%0A%09%09c2.1%2C2.3%2C4.8%2C3.1%2C7.8%2C2.7c3.9-0.5%2C6.8-3.3%2C7.2-7.1C38.4%2C21.5%2C38.4%2C21.5%2C38.3%2C21.3C38.4%2C21.4%2C38.4%2C21.3%2C38.3%2C21.3z%22/%3E%0A%3C/g%3E%0A%3C/svg%3E%0A");
+  background-repeat: no-repeat; }
+
+.icon-chair--logo {
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2022.0.1%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2064%2064%22%20style%3D%22enable-background%3Anew%200%200%2064%2064%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text/css%22%3E%0A%09.st0%7Bfill%3A%236C352E%3B%7D%0A%09.st1%7Bfill%3A%23F1E8D7%3Bstroke%3A%23F1E8D7%3Bstroke-width%3A0.2445%3Bstroke-miterlimit%3A10%3B%7D%0A%09.st2%7Bfill%3A%236C352E%3Bstroke%3A%23F1E8D7%3Bstroke-width%3A0.2445%3Bstroke-miterlimit%3A10%3B%7D%0A%3C/style%3E%0A%3Ccircle%20class%3D%22st0%22%20cx%3D%2230.8%22%20cy%3D%2232.6%22%20r%3D%2229.6%22/%3E%0A%3Cg%3E%0A%09%3Cg%3E%0A%09%09%3Cpath%20class%3D%22st1%22%20d%3D%22M10.2%2C28.5h5.2l0%2C1v9.9c0%2C0%2C0%2C0%2C0%2C0l-1.2%2C11.8h1.6L17%2C39.4V27.6h-6.8V28.5z%22/%3E%0A%09%09%3Cpath%20class%3D%22st1%22%20d%3D%22M44.6%2C39.4l1.2%2C11.9h1.6l-1.2-11.8c0%2C0%2C0%2C0%2C0%2C0l0-9.9l0-1h5.2v-1h-6.8V39.4z%22/%3E%0A%09%09%3Crect%20x%3D%2218%22%20y%3D%2237.2%22%20class%3D%22st1%22%20width%3D%2225.7%22%20height%3D%221.9%22/%3E%0A%09%09%3Cpolygon%20class%3D%22st1%22%20points%3D%2217.4%2C44.8%2017.3%2C45.8%2044.2%2C45.8%2044.1%2C44.8%20%09%09%22/%3E%0A%09%09%3Cpath%20class%3D%22st1%22%20d%3D%22M43.7%2C40.1h-3.9l-0.3%2C2.4c0%2C0.2-0.2%2C0.4-0.5%2C0.4H22.3c-0.2%2C0-0.5-0.2-0.5-0.4l-0.3-2.4h-3.6l-0.4%2C3.7h26.5%0A%09%09%09L43.7%2C40.1z%22/%3E%0A%09%09%3Cpolygon%20class%3D%22st1%22%20points%3D%2238.6%2C42%2038.8%2C40.1%2022.5%2C40.1%2022.7%2C42%20%09%09%22/%3E%0A%09%09%3Cpath%20class%3D%22st1%22%20d%3D%22M31.5%2C36.2l0.3-26.7c-0.8%2C0-1.5%2C0-2.3%2C0l0.3%2C26.7H31.5z%22/%3E%0A%09%09%3Cpath%20class%3D%22st1%22%20d%3D%22M37.2%2C10.5c-0.7-0.2-1.5-0.4-2.2-0.6l-1.2%2C26.3h1.6L37.2%2C10.5z%22/%3E%0A%09%09%3Cpath%20class%3D%22st1%22%20d%3D%22M27.5%2C36.2L26.3%2C9.9c-0.8%2C0.2-1.5%2C0.4-2.2%2C0.6l1.8%2C25.7H27.5z%22/%3E%0A%09%09%3Cpath%20class%3D%22st1%22%20d%3D%22M42.3%2C13.2c-0.6-0.5-1.3-0.9-2-1.3l-2.6%2C24.3h1.6L42.3%2C13.2z%22/%3E%0A%09%09%3Cpath%20class%3D%22st1%22%20d%3D%22M23.6%2C36.2l-2.5-24.3c-0.7%2C0.4-1.4%2C0.8-2%2C1.3l2.9%2C23H23.6z%22/%3E%0A%09%09%3Cpath%20class%3D%22st2%22%20d%3D%22M17%2C39.4l-1.2%2C11.9h-1.6l1.2-11.8c0%2C0%2C0%2C0%2C0%2C0v-9.9l0-1h-5.2v-1H17V39.4z%20M40.3%2C11.9c0.7%2C0.4%2C1.4%2C0.8%2C2%2C1.3%0A%09%09%09l-2.9%2C23h-1.6L40.3%2C11.9z%20M35%2C9.9c0.8%2C0.2%2C1.5%2C0.4%2C2.2%2C0.6l-1.8%2C25.7h-1.6L35%2C9.9z%20M31.8%2C9.5l-0.3%2C26.7h-1.6L29.5%2C9.5%0A%09%09%09C30.3%2C9.4%2C31%2C9.4%2C31.8%2C9.5z%20M24.1%2C10.5c0.7-0.2%2C1.5-0.4%2C2.2-0.6l1.2%2C26.3h-1.6L24.1%2C10.5z%20M19%2C13.2c0.6-0.5%2C1.3-0.9%2C2-1.3%0A%09%09%09l2.5%2C24.3H22L19%2C13.2z%20M18%2C37.2h25.7v1.9H18V37.2z%20M38.8%2C40.1L38.6%2C42H22.7l-0.2-1.9H38.8z%20M17.9%2C40.1h3.6l0.3%2C2.4%0A%09%09%09c0%2C0.2%2C0.2%2C0.4%2C0.5%2C0.4H39c0.2%2C0%2C0.5-0.2%2C0.5-0.4l0.3-2.4h3.9l0.4%2C3.7H17.5L17.9%2C40.1z%20M17.3%2C45.8l0.1-1h26.7l0.1%2C1H17.3z%0A%09%09%09%20M51.4%2C28.5h-5.2l0%2C1l0%2C9.9c0%2C0%2C0%2C0%2C0%2C0l1.2%2C11.8h-1.6l-1.2-11.9V27.6h6.8V28.5z%22/%3E%0A%09%09%3Cpath%20class%3D%22st1%22%20d%3D%22M10.2%2C28.5h5.2l0%2C1v9.9c0%2C0%2C0%2C0%2C0%2C0l-1.2%2C11.8h1.6L17%2C39.4V27.6h-6.8V28.5z%22/%3E%0A%09%09%3Cpath%20class%3D%22st1%22%20d%3D%22M44.6%2C39.4l1.2%2C11.9h1.6l-1.2-11.8c0%2C0%2C0%2C0%2C0%2C0l0-9.9l0-1h5.2v-1h-6.8V39.4z%22/%3E%0A%09%09%3Crect%20x%3D%2218%22%20y%3D%2237.2%22%20class%3D%22st1%22%20width%3D%2225.7%22%20height%3D%221.9%22/%3E%0A%09%09%3Cpolygon%20class%3D%22st1%22%20points%3D%2217.4%2C44.8%2017.3%2C45.8%2044.2%2C45.8%2044.1%2C44.8%20%09%09%22/%3E%0A%09%09%3Cpath%20class%3D%22st1%22%20d%3D%22M43.7%2C40.1h-3.9l-0.3%2C2.4c0%2C0.2-0.2%2C0.4-0.5%2C0.4H22.3c-0.2%2C0-0.5-0.2-0.5-0.4l-0.3-2.4h-3.6l-0.4%2C3.7h26.5%0A%09%09%09L43.7%2C40.1z%22/%3E%0A%09%09%3Cpolygon%20class%3D%22st1%22%20points%3D%2238.6%2C42%2038.8%2C40.1%2022.5%2C40.1%2022.7%2C42%20%09%09%22/%3E%0A%09%09%3Cpath%20class%3D%22st1%22%20d%3D%22M31.5%2C36.2l0.3-26.7c-0.8%2C0-1.5%2C0-2.3%2C0l0.3%2C26.7H31.5z%22/%3E%0A%09%09%3Cpath%20class%3D%22st1%22%20d%3D%22M37.2%2C10.5c-0.7-0.2-1.5-0.4-2.2-0.6l-1.2%2C26.3h1.6L37.2%2C10.5z%22/%3E%0A%09%09%3Cpath%20class%3D%22st1%22%20d%3D%22M27.5%2C36.2L26.3%2C9.9c-0.8%2C0.2-1.5%2C0.4-2.2%2C0.6l1.8%2C25.7H27.5z%22/%3E%0A%09%09%3Cpath%20class%3D%22st1%22%20d%3D%22M42.3%2C13.2c-0.6-0.5-1.3-0.9-2-1.3l-2.6%2C24.3h1.6L42.3%2C13.2z%22/%3E%0A%09%09%3Cpath%20class%3D%22st1%22%20d%3D%22M23.6%2C36.2l-2.5-24.3c-0.7%2C0.4-1.4%2C0.8-2%2C1.3l2.9%2C23H23.6z%22/%3E%0A%09%09%3Cpath%20class%3D%22st2%22%20d%3D%22M51.9%2C26.6h-7.8c-0.3%2C0-0.5%2C0.2-0.5%2C0.5v9.1h-3.3l3-23.1c0-0.2%2C0-0.3-0.2-0.4c-0.9-0.7-1.8-1.3-2.8-1.8%0A%09%09%09c-0.2-0.1-0.8-0.3-0.9%2C0.4l-2.6%2C25.1h-0.3l1.8-26c0-0.2-0.1-0.4-0.3-0.5c-1-0.4-2.1-0.7-3.3-0.9c-0.1%2C0-0.3%2C0-0.4%2C0.1%0A%09%09%09C34.1%2C9%2C34%2C9.1%2C34%2C9.3l-1.3%2C26.9h-0.3L32.8%2C9c0-0.3-0.2-0.5-0.5-0.5c-1.2-0.1-2.2-0.1-3.3%2C0c-0.3%2C0-0.5%2C0.2-0.5%2C0.5l0.3%2C27.2h-0.3%0A%09%09%09L27.3%2C9.3c0-0.1-0.1-0.3-0.2-0.4c-0.1-0.1-0.3-0.1-0.4-0.1c-1.1%2C0.2-2.2%2C0.5-3.3%2C0.9c-0.2%2C0.1-0.3%2C0.3-0.3%2C0.5l1.8%2C26h-0.4L22%2C11%0A%09%09%09c0-0.2-0.1-0.3-0.3-0.4c-0.1-0.1-0.3-0.1-0.5%2C0c-1.1%2C0.6-2.1%2C1.2-3%2C1.9C18.1%2C12.7%2C18%2C12.9%2C18%2C13l3%2C23.1h-3v-9.1%0A%09%09%09c0-0.3-0.2-0.5-0.5-0.5H9.7c-0.3%2C0-0.5%2C0.2-0.5%2C0.5V29c0%2C0.3%2C0.2%2C0.5%2C0.5%2C0.5h4.7v9.9l-1.2%2C12.3c0%2C0.1%2C0%2C0.3%2C0.1%2C0.4%0A%09%09%09c0.1%2C0.1%2C0.2%2C0.2%2C0.4%2C0.2h2.6c0.3%2C0%2C0.5-0.2%2C0.5-0.5c0%2C0%2C0%2C0%2C0%2C0l0.5-5h27.1l0.5%2C5.1c0%2C0.2%2C0.2%2C0.4%2C0.5%2C0.4h2.6%0A%09%09%09c0.1%2C0%2C0.3-0.1%2C0.4-0.2c0.1-0.1%2C0.1-0.2%2C0.1-0.4l-1.2-12.3l0-9.9h4.7c0.3%2C0%2C0.5-0.2%2C0.5-0.5v-1.9C52.4%2C26.8%2C52.2%2C26.6%2C51.9%2C26.6z%0A%09%09%09%20M17%2C39.4l-1.2%2C11.9h-1.6l1.2-11.8c0%2C0%2C0%2C0%2C0%2C0v-9.9l0-1h-5.2v-1H17V39.4z%20M40.3%2C11.9c0.7%2C0.4%2C1.4%2C0.8%2C2%2C1.3l-2.9%2C23h-1.6%0A%09%09%09L40.3%2C11.9z%20M35%2C9.9c0.8%2C0.2%2C1.5%2C0.4%2C2.2%2C0.6l-1.8%2C25.7h-1.6L35%2C9.9z%20M31.8%2C9.5l-0.3%2C26.7h-1.6L29.5%2C9.5C30.3%2C9.4%2C31%2C9.4%2C31.8%2C9.5%0A%09%09%09z%20M24.1%2C10.5c0.7-0.2%2C1.5-0.4%2C2.2-0.6l1.2%2C26.3h-1.6L24.1%2C10.5z%20M19%2C13.2c0.6-0.5%2C1.3-0.9%2C2-1.3l2.5%2C24.3H22L19%2C13.2z%20M18%2C37.2%0A%09%09%09h25.7v1.9H18V37.2z%20M38.8%2C40.1L38.6%2C42H22.7l-0.2-1.9H38.8z%20M17.9%2C40.1h3.6l0.3%2C2.4c0%2C0.2%2C0.2%2C0.4%2C0.5%2C0.4H39%0A%09%09%09c0.2%2C0%2C0.5-0.2%2C0.5-0.4l0.3-2.4h3.9l0.4%2C3.7H17.5L17.9%2C40.1z%20M17.3%2C45.8l0.1-1h26.7l0.1%2C1H17.3z%20M51.4%2C28.5h-5.2l0%2C1l0%2C9.9%0A%09%09%09c0%2C0%2C0%2C0%2C0%2C0l1.2%2C11.8h-1.6l-1.2-11.9V27.6h6.8V28.5z%22/%3E%0A%09%3C/g%3E%0A%3C/g%3E%0A%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 150px;
+  display: inline-block; }
+
 .hero--bkg {
   background-image: url("../../assets/images/hero_bkg.jpg");
   background-repeat: no-repeat;
@@ -439,6 +1251,14 @@ a:visited.nav__link {
   z-index: -999;
   width: 100%; }
 
+.hero--overlay {
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.hero__title {
+  font-size: 4rem;
+  margin: 0;
+  color: #f15a24; }
+
 .hero-text {
   text-align: center;
   position: absolute;
@@ -446,6 +1266,17 @@ a:visited.nav__link {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white; }
+
+@media only screen and (max-width: 48em) {
+  .hero__title {
+    font-size: 2rem;
+    margin: 0; }
+  .hero--bkg {
+    background-position: 0% 90%;
+    height: 490px;
+    background-size: cover; }
+  .hero-text {
+    top: 67%; } }
 
 .box {
   padding: 1rem; }
@@ -1218,7 +2049,6 @@ a:visited.nav__link {
 .wrapper,
 .wrapper--absolute {
   width: 100%;
-  padding-right: 1rem;
   position: relative;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1252,6 +2082,10 @@ a:visited.nav__link {
 
 .vr--x25 {
   margin-bottom: 25rem; }
+
+@media only screen and (max-width: 48em) {
+  .vr--x25 {
+    margin-bottom: 19rem; } }
 
 .hList > * {
   display: inline-block; }
@@ -1480,9 +2314,31 @@ a:visited.nav__link {
 .txt--color-white {
   color: #ffffff; }
 
+.txt--color-brand {
+  color: #6b342c; }
+
 footer {
-  width: 100%;
-  background-color: purple; }
+  background-color: #f15a24; }
+
+.box--brown {
+  background: #03060f;
+  background: -moz-linear-gradient(left, #03060f 0%, #6b342c 100%);
+  background: -webkit-gradient(linear, left left, left right, color-stop(0%, #03060f), color-stop(100%, #6b342c));
+  background: -webkit-linear-gradient(left, #03060f 0%, #6b342c 100%);
+  background: -o-linear-gradient(left, #03060f 0%, #6b342c 100%);
+  background: -ms-linear-gradient(left, #03060f 0%, #6b342c 100%);
+  background: linear-gradient(to right, #03060f 0%, #6b342c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03060f', endColorstr='#6b342c',GradientType=0 ); }
+
+.footer__logo {
+  width: 10.4rem; }
+
+.footer__icons {
+  text-align: right; }
+
+@media only screen and (max-width: 48em) {
+  .footer__icons {
+    text-align: left; } }
 
 .padding--x1 {
   padding: 1rem; }
@@ -1509,7 +2365,7 @@ footer {
   text-align: left; }
 
 .txt--align-right {
-  text-align: center; }
+  text-align: right; }
 
 .txt--align-center {
   text-align: center; }

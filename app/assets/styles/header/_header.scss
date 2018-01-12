@@ -197,7 +197,7 @@ a:visited.nav__link {
 
 .menu__hd {
     padding: 1rem;
-    background-color: #004a88;
+    background-color: $brand-brown;
     color: #ffffff;
 }
 
@@ -211,7 +211,7 @@ a:visited.nav__link {
 
 .contextual-nav a,
 .contextual-nav a:visited {
-    color: #1666af;
+    color: $brand-brown;
     display: block;
     text-transform: capitalize;
     text-decoration: none;
@@ -223,7 +223,7 @@ a:visited.nav__link {
 
 .contextual-nav a.isActive,
 .contextual-nav a:hover {
-    background-color: #003764;
+    background-color: $gray-5;
     color: #ffffff;
     text-decoration: none;
 }

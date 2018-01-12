@@ -1,4 +1,22 @@
 footer {
-    width: 100%;
-    background-color: purple;
+    background-color: $brand-orange;
+}
+
+.box--brown {
+    @include basicGradient(left, #03060f, right, $brand-brown);
+}
+
+.footer__logo {
+   width: 10.4rem;
+}
+
+.footer__icons {
+    text-align: right;
+ }
+
+@media only screen and (max-width: $breakpoint-medium) {
+    .footer__icons {
+        text-align: left;
+     }
+  
 }
