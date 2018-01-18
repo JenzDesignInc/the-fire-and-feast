@@ -6,6 +6,8 @@
 	.st0{fill:#6C352E;}
 	.st1{fill:#F1E8D7;stroke:#F1E8D7;stroke-width:0.2445;stroke-miterlimit:10;}
 	.st2{fill:#6C352E;stroke:#F1E8D7;stroke-width:0.2445;stroke-miterlimit:10;}
+	.st3{font-family:'RunWild';}
+	.st4{font-size:28px;}
 </style>
 <circle class="st0" cx="30.8" cy="32.6" r="29.6"/>
 <g>
@@ -56,4 +58,5 @@
 			c0,0,0,0,0,0l1.2,11.8h-1.6l-1.2-11.9V27.6h6.8V28.5z"/>
 	</g>
 </g>
+<text transform="matrix(1 0 0 1 12.125 24.875)" class="st3 st4">fire</text>
 </svg>
